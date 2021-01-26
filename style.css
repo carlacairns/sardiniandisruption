@@ -42,7 +42,7 @@ header{
     justify-content: space-between;
     border-bottom: 1px  solid rgb(187, 187, 187);
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 #subscribe{
     background-color: #88bae9;
@@ -57,6 +57,7 @@ header{
 }
 .header_left{
     margin-left: 20px;
+    margin-top: 25px;
 }
 .header_title{
     text-transform: uppercase;
@@ -64,7 +65,13 @@ header{
     font-weight: 800;
     
 }
+.header_title a{
+    text-decoration: none;
+    color: #444444;
+
+}
 .header_right{
+    margin-top: 25px;
     margin-right: 20px;
 }
 #about{
@@ -72,7 +79,9 @@ header{
 }
 .header_links{
     text-decoration: none;
-    color: #444444;
+    font-size: 15px;
+    color: #2c2c2c;
+    ;
 
 }
 .header_links:hover{
@@ -87,7 +96,7 @@ nav{
     width:100%;
     position: fixed;
 
-    margin-top:150px;
+    margin-top:140px;
     justify-content: space-around;
     padding-top: 25px;
     margin-bottom:20px;
@@ -101,7 +110,7 @@ nav{
 }
 .bottom_nav_line{
     border-bottom: 1px  solid rgb(187, 187, 187);
-    padding-top:215px;
+    padding-top:205px;
 }
 
 .nav-links{
