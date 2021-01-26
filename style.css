@@ -5,14 +5,35 @@ html{
 }
 body{
     margin:0;
+
 }
 .container
 { 
     font-family: Georgia, serif;
     font-feature-settings: 'kern';
     font-kerning: normal;
+    color: #444444;
 }
 
+
+button{
+    padding: 15px 32px;
+    border-radius: 3px;
+    font-weight:bold;
+    border: none;
+
+} 
+button:hover{
+    box-shadow: 0 0 3px 1px rgba(215, 215, 215, 0.6);
+    cursor: pointer;
+}
+h1{
+    font-size: 40px;
+    margin:0;
+}
+
+
+/* header */
 header{
     display: flex;
     text-align: center;
@@ -23,49 +44,19 @@ header{
     padding-top: 20px;
     padding-bottom: 40px;
 }
-button{
-    
+#subscribe{
+    background-color: #88bae9;
+    color: white;
 }
-nav{
-    display: flex;
-    width:100%;
-    position: fixed;
-    margin-top:150px;
-    justify-content: space-around;
-    padding-top: 25px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 700;
-    font-feature-settings: 'kern';
-    font-kerning: normal;
-
+#latest_article{
+    background-color: #f0f0f0;
 }
-.bottom_nav_line{
-    position:fixed;
-    margin-top: 215px;
-    width:100%;
-    border-bottom: 1px  solid rgb(187, 187, 187);
-
-}
-.nav-links{
-    text-decoration: none;
-    color: black;
-    padding-bottom: 3px;
-
-}
-.nav-links:hover{
-    border-bottom: solid 2px black;
-    padding-bottom: 3px;
-}
-h1{
-    font-size: 40px;
-    margin:0;
+#donate{
+    background-color: #88bae9;
+    color: white;
 }
 .header_left{
     margin-left: 20px;
-}
-.header_right{
-    margin-right: 20px;
 }
 .header_title{
     text-transform: uppercase;
@@ -73,6 +64,60 @@ h1{
     font-weight: 800;
     
 }
+.header_right{
+    margin-right: 20px;
+}
+#about{
+    padding-right: 4px;
+}
+.header_links{
+    text-decoration: none;
+    color: #444444;
+
+}
+.header_links:hover{
+    border-bottom: solid 2px black;
+    padding-bottom: 3px;
+}
+
+
+/* nav bar */
+nav{
+    display: flex;
+    width:100%;
+    position: fixed;
+
+    margin-top:150px;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-feature-settings: 'kern';
+    font-kerning: normal;
+
+
+}
+.bottom_nav_line{
+    border-bottom: 1px  solid rgb(187, 187, 187);
+    padding-top:215px;
+}
+
+.nav-links{
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: #3a3a3a;
+
+
+}
+.nav-links:hover{
+    border-bottom: solid 2px black;
+    padding-bottom: 3px;
+}
+
+
+/* footer */
 footer{
     position: fixed;
     font-size: 12px;
