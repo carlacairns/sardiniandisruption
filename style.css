@@ -37,12 +37,15 @@ h1{
 header{
     display: flex;
     text-align: center;
-    width:100%;
+    width:100%; /* must include with position fixed*/
     position: fixed;
+
+    background-color: white;
     justify-content: space-between;
     border-bottom: 1px  solid rgb(231, 231, 231);
     padding-top: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 23px; /* covers little gap when scrolling, in nav padding top too*/
+    margin-bottom: 25px;
 }
 #subscribe{
     background-color: #88bae9;
@@ -98,13 +101,15 @@ nav{
 
     margin-top:140px;
     justify-content: space-around;
-    padding-top: 25px;
-    margin-bottom:20px;
+    padding-top: 22px;
+    padding-bottom:20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
     font-feature-settings: 'kern';
     font-kerning: normal;
+    background-color: white;
+    
 
 
 }
@@ -133,6 +138,8 @@ nav{
     display:flex;
     padding-top: 18%;
     padding-left: 2%;
+
+    background-color: white;
     
 }
 
