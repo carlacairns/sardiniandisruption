@@ -131,6 +131,9 @@ nav{
 
 .content{
     display:flex;
+    padding-top: 18%;
+    padding-left: 2%;
+    
 }
 
 /* footer */
