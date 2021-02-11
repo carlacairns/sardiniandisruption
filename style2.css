@@ -1,0 +1,53 @@
+html,body{
+    height:100%;
+   width: 100%;
+   margin:0;
+   padding:0;
+   font-family: 'Raleway', sans-serif;
+   
+}
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.d-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color:#222;
+
+
+}
+
+/* HEADER */
+
+header{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px  solid rgb(231, 231, 231);
+}
+.header-content{
+    justify-content: space-between;
+}
+.header-right>li{
+    list-style: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: .85rem;
+
+}
+.header-right>li:hover span{
+    /* spanning the words in the link make the underline not effect the logo and size of margin*/
+    border-bottom: solid 2px black;
+    padding-bottom: 2px;
+
+}
+.logo{
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    /* perfectly centered in the header*/
+    margin-top:auto;
+    margin-bottom: auto;
+}
