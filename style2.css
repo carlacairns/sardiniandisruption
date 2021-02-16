@@ -1,12 +1,20 @@
 html,body{
-    height:100%;
+   height:100%;
    width: 100%;
    margin:0;
    padding:0;
    font-family: 'Raleway', sans-serif;
    
 }
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+.content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
 .container{
+
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -15,21 +23,11 @@ html,body{
 }
 a{
     text-decoration: none;
-    color:#222;
+    color:rgb(29, 29, 29);
 
 
 }
 
-/* HEADER */
-
-header{
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    border-bottom: 1px  solid rgb(231, 231, 231);
-}
-.header-content{
-    justify-content: space-between;
-}
 .header-right>li{
     list-style: none;
     margin-right: 1rem;
@@ -37,17 +35,180 @@ header{
     font-size: .85rem;
 
 }
-.header-right>li:hover span{
+.links:hover span{
     /* spanning the words in the link make the underline not effect the logo and size of margin*/
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #D0B8AC;
     padding-bottom: 2px;
 
 }
+
+
+/* HEADER */
+
+header{
+    background-color: #fdf7f3;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    border-bottom: 1px  solid rgb(231, 231, 231);
+
+}
+.header-content{
+    justify-content: space-between;
+}
+
+.header-right>li{
+    list-style: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: .85rem;
+
+}
+
+.logo>a{
+    color:rgb(116, 116, 116);
+
+}
+
 .logo{
     text-transform: uppercase;
-    letter-spacing: .05rem;
-    font-weight: 500;
+    letter-spacing: .08rem;
+    font-weight:600;
+    text-shadow: 1px 0px 1px rgba(165, 165, 165, 1);
+
     /* perfectly centered in the header*/
     margin-top:auto;
     margin-bottom: auto;
+}
+.logo:hover{
+    color:rgb(145, 143, 143);
+
+}
+.donate>span{
+    text-decoration: none;
+    background-color: white;
+    padding: .5rem .5rem .5rem .5rem;
+    border-radius: .2rem;
+
+}
+.donate>span:hover {
+    box-shadow: 0 0 3px 2px rgba(235, 234, 234, 0.6);
+    color:rgb(84, 84, 84);
+
+}
+/* NAV BAR*/
+nav{
+    background-color: #fdfdfc;
+    border-bottom: 1px  solid rgb(231, 231, 231);
+
+}
+.nav-bar{
+    width:100%;
+    justify-content: space-around;
+    font-weight: 500;
+
+}
+.nav-bar>li>a>span{
+    color: #270905;
+    letter-spacing: .05rem;
+}
+
+.nav-bar>li{
+    list-style: none;
+    font-size: .9rem;
+
+}
+/* ARTICLES*/
+.grid{
+    display:grid;
+}
+.col1-col2-col1{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+img {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: .1rem;
+}
+img:hover{
+    box-shadow: 0 0 3px 4px rgba(215, 215, 215, 0.6);
+ }
+body{
+    background-color: #f8f5f2;
+}
+.article-margin{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+  
+.article-title{
+    color:rgb(8, 8, 8);
+    font-weight: 500;
+    font-size:.95rem;
+    text-align:center;
+    letter-spacing: .01rem;
+    padding-bottom: .4rem;
+
+}
+.article-title>span{
+    border-bottom: solid 2px #b16969;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color:rgb(116, 114, 114)
+}
+.article-title>span:hover{
+    color:rgb(84, 84, 84)
+
+}
+.article-catagory{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    bottom:1rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+.article-catagory>span{
+    background-color: #F9F5F1;
+    color:rgb(145, 143, 143);
+    padding: .3rem 1rem 0rem 1rem;
+    border-radius: .1rem;
+
+
+}
+.article-description{
+    line-height: 1.35rem;
+    text-align: left;
+    font-size: .98rem;
+}
+.article-middle>.article-description{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/* FOOTER*/
+footer{
+    /* page wrapper necessary */
+    position: absolute;
+    bottom:0;
+    display:flex;
+    
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    background-color: #b16969;
+    height: 2.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+footer>a{
+    font-family: sans-serif;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: .8rem;
+    align-self: center;
 }
