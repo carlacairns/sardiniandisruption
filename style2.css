@@ -11,8 +11,8 @@ html,body{
     min-height: 100vh;
   }
 .content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
+    padding-bottom: 4rem;    /* Footer height + some extra */
+}
 .container{
 
     margin-left: 5%;
@@ -46,10 +46,10 @@ a{
 /* HEADER */
 
 header{
-    background-color: #fdf7f3;
+    background-color: #faece3;
     padding-top: .2rem;
     padding-bottom: .2rem;
-    border-bottom: 1px  solid rgb(231, 231, 231);
+    border-bottom: 1px  solid rgb(212, 212, 212);
 
 }
 .header-content{
@@ -65,7 +65,7 @@ header{
 }
 
 .logo>a{
-    color:rgb(116, 116, 116);
+    color:rgb(85, 85, 85);
 
 }
 
@@ -88,6 +88,7 @@ header{
     background-color: white;
     padding: .5rem .5rem .5rem .5rem;
     border-radius: .2rem;
+    border: 1px solid rgb(238, 238, 238);
 
 }
 .donate>span:hover {
@@ -98,7 +99,7 @@ header{
 /* NAV BAR*/
 nav{
     background-color: #fdfdfc;
-    border-bottom: 1px  solid rgb(231, 231, 231);
+    border-bottom: 1px  solid rgb(212, 212, 212);
 
 }
 .nav-bar{
@@ -135,7 +136,7 @@ img:hover{
     box-shadow: 0 0 3px 4px rgba(215, 215, 215, 0.6);
  }
 body{
-    background-color: #f8f5f2;
+    background-color: #f8f7f7;
 }
 .article-margin{
     margin-top: 1rem;
@@ -196,14 +197,14 @@ footer{
     position: absolute;
     bottom:0;
     display:flex;
-    
     width:100%;
     text-align: center;
     justify-content: center;
-    background-color: #b16969;
+
+    background-color: #b87e7e;
     height: 2.5rem;
-    margin-top: auto;
-    margin-bottom: auto;
+    border-top: 1px  solid rgb(231, 231, 231);
+
 }
 footer>a{
     font-family: sans-serif;
@@ -211,4 +212,17 @@ footer>a{
     font-weight: 500;
     font-size: .8rem;
     align-self: center;
+}
+
+/* ABOUT PAGE */
+
+.about-content>h1{
+color:rgb(68, 68, 68);
+padding-bottom: 1rem;
+border-bottom: 2px solid #b87e7e;
+}
+.about-content{
+    
+    margin: 3rem 3rem 3rem 3rem;
+    text-align: center;
 }
