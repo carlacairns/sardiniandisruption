@@ -100,13 +100,12 @@ header{
 nav{
     background-color: #fdfdfc;
     border-bottom: 1px  solid rgb(212, 212, 212);
-
+    box-shadow: 0 4px 2px -2px rgb(223, 222, 222); /* bottom box shadow= 4th value -*/
 }
 .nav-bar{
     width:100%;
     justify-content: space-around;
     font-weight: 500;
-
 }
 .nav-bar>li>a>span{
     color: #270905;
@@ -206,12 +205,15 @@ footer{
     border-top: 1px  solid rgb(231, 231, 231);
 
 }
-footer>a{
+footer, footer>a, footer>p>a{
     font-family: sans-serif;
     color:rgb(255, 255, 255);
     font-weight: 500;
     font-size: .8rem;
     align-self: center;
+}
+footer>p{
+    margin-left: .25rem;
 }
 
 /* ABOUT PAGE */
