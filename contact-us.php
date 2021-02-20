@@ -1,3 +1,19 @@
+<?php
+    $name =$_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = "admin@sardiniandisruption.com";
+    $body= "";
+
+    $body .= "From: " .$name. "\r\n";
+    $body .= "Email: " .$email. "\r\n";
+    $body .= "Message: " .$message. "\r\n";
+
+    mail($to, $subject,$body );
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -32,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="contact-us.html" class="links">
+                    <a href="contact-us.php" class="links">
                         <span>Contact Us</span>
                     </a>
                 </li>
@@ -78,8 +94,8 @@
             <p> If you would like a response, don't forget to leave your email.</p>
         </div>
     
-    <form>
-        <div class="divider">
+    <form id="contact-form" method="POST" action="contact-us.php">
+        <div class="divider spacing">
 
         </div>
         <div class="form-group">
@@ -101,14 +117,14 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="inputMessage" class="col-sm control-label input-message">Message</label>
+            <label for="inputMessage" class="col-sm control-label input-message" required>Message</label>
 
             <div class="col-lg">
                 <textarea name="message" rows="7" class="form-control" id="inputMessage"></textarea>
             </div>
         </div>
         <div class="form-group submit-btn">
-                <button type="submit" class="btn-primary ">Send Message</button>
+                <input type="submit" class="btn-primary " value="Send Message"></input>
         </div>
     </form>
 </div>

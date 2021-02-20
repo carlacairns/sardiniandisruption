@@ -137,6 +137,10 @@ img {
 img:hover{
     box-shadow: 0 0 3px 4px rgba(215, 215, 215, 0.6);
  }
+ .no-box-shadow:hover{
+    box-shadow: none;
+
+ }
 body{
     background-color: #f8f7f7;
 }
@@ -223,13 +227,23 @@ footer>p{
 
 .about-content>h1{
 color:rgb(68, 68, 68);
-padding-bottom: 1rem;
-border-bottom: 2px solid #b87e7e;
+margin-bottom: 1rem;
 }
 .about-content{
     
     margin: 3rem 3rem 3rem 3rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-left-col{
+    width:100%;
+    margin: 3rem 0 1rem 0;
+}
+.about-divider{
+    padding-bottom: 0;
+    margin-bottom: 0rem;
 }
 
 /* CONTACT PAGE*/
@@ -258,13 +272,15 @@ border-bottom: 2px solid #b87e7e;
     color:rgb(68, 68, 68);
 
 }
+.spacing{
+    margin-bottom: 2rem;
+}
 .divider{
     position: relative;
     left: 40%;
     border-bottom: 2px solid #b87e7e;
     width: 20%;
     justify-self: center;
-    margin-bottom: 2rem;
 }
 .form-group{
     margin-top: 1rem;
@@ -307,4 +323,10 @@ input, textarea{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+.btn-primary:hover{
+    box-shadow: 0 0 3px 4px rgba(215, 215, 215, 0.6);
+    color: rgb(121, 120, 120);
+    cursor: pointer;
+
 }
