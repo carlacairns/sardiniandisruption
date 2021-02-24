@@ -5,13 +5,13 @@
     $message = $_POST['message'];
 
     $to = "admin@sardiniandisruption.com";
-    $body= "";
+    $body= " ";
 
     $body .= "From: " .$name. "\r\n";
     $body .= "Email: " .$email. "\r\n";
     $body .= "Message: " .$message. "\r\n";
 
-    mail($to, $subject,$body );
+    mail($to, $subject,$body); 
 ?>
 
 <!doctype html>
