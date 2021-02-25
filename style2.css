@@ -330,3 +330,8 @@ input, textarea{
     cursor: pointer;
 
 }
+
+.invalidEmail, .emptyMessage{
+    box-shadow: 0 0 3px 4px rgba(221, 34, 34, 0.6);
+
+}

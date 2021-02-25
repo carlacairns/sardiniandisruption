@@ -1,17 +1,67 @@
+
 <?php
-    $name =$_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    if(isset($_POST['message']) && $_POST['message']!=''){
+        //submit form if is set and not empty
 
-    $to = "admin@sardiniandisruption.com";
-    $body= " ";
+    if(isset($_POST['email']) && $_POST['email']!=''){
+        //if user has input an email, validate it.
+        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+            //If inputted email is valid, send.
+            $name =$_POST['name'];
+            $email = $_POST['email'];
+            $subject = $_POST['subject'];
+            $message = $_POST['message'];
+        
+            $to = "carla@sardiniandisruption.com";
+            $body= "";
+        
+            $body .= "From: " .$name. "\r\n";
+            $body .= "Email: " .$email. "\r\n";
+            $body .= "Message: " .$message. "\r\n";
+        
+        
+            $mail = mail($to, "Subject: $subject",$body); 
 
-    $body .= "From: " .$name. "\r\n";
-    $body .= "Email: " .$email. "\r\n";
-    $body .= "Message: " .$message. "\r\n";
+            if($mail){
+                $messageSent=true;
+            }
+            else{
+                $messageSent=false;
+            }
+        }
+        else{
+            $invalidEmail = "invalid_entry";
+        }
 
-    mail($to, $subject,$body); 
+    }
+    else{
+        //if user has chose not to add an email, send.
+        $name =$_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+    
+        $to = "carla@sardiniandisruption.com";
+        $body= "";
+    
+        $body .= "From: " .$name. "\r\n";
+        $body .= "Email: " .$email. "\r\n";
+        $body .= "Message: " .$message. "\r\n";
+    
+    
+        $mail=mail($to, "Subject: $subject",$body); 
+        if($mail){
+            $messageSent=true;
+        }
+        else{
+            $messageSent=false;
+        }
+    }
+}
+else{
+    $emptyMessage = "invalid_entry";
+ 
+}
 ?>
 
 <!doctype html>
@@ -24,6 +74,18 @@
 <title>The Sardinian Disruption</title>
 </head>
 <body>
+
+<?php
+    if($messageSent):
+
+?>
+<script>
+    alert("Message recieved!")
+</script>
+
+<?php
+    else:
+?>
 <div class="page-container">
     <div class="content-wrap">
     <header>
@@ -107,7 +169,7 @@
         <div class="form-group">
             <label for="inputEmail" class="col-sm control-label">Email</label>
             <div class="col-lg">
-                <input type="text" name="email" value="" class="form-control" id="inputEmail">
+                <input  type="email" name="email" value="" class="form-control <?= $invalidEmail ?? "" ?>" id="inputEmail">
             </div>
         </div>
         <div class="form-group">
@@ -120,7 +182,7 @@
             <label for="inputMessage" class="col-sm control-label input-message" required>Message</label>
 
             <div class="col-lg">
-                <textarea name="message" rows="7" class="form-control" id="inputMessage"></textarea>
+                <textarea  name="message" rows="7" class="form-control <?= $emptyMessage ?? "" ?>" id="inputMessage"></textarea>
             </div>
         </div>
         <div class="form-group submit-btn">
@@ -137,6 +199,8 @@
 </footer>
 </div>
 
-
+<?php
+    endif;
+?>
 </body>
 </html>
