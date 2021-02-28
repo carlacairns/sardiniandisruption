@@ -51,12 +51,14 @@ a{
 
 }
 h1{
-    color:rgb(68, 68, 68);
+    color:rgb(48, 48, 48);
     margin-bottom: 1rem;
+    letter-spacing: 1px;
     }
 
 .center{
     justify-content: center;
+    align-content: center;
 }
 .no-wrap{
     white-space: nowrap;
@@ -121,8 +123,7 @@ header{
 .donate-label{
     font-weight: bold;
     text-decoration: underline #b87e7e;
-    color: rgb(58, 58, 58);
-
+    color: rgb(87, 85, 85);
 }
 .donate-label{
     margin-bottom: 1rem;
@@ -169,7 +170,7 @@ img {
     max-width: 100%; 
     max-height: 100%;
     object-fit: cover;
-    border-radius: .1rem;
+    border-radius: .3rem;
 }
 img:hover{
     box-shadow: 0 0 3px 4px rgba(215, 215, 215, 0.6);
@@ -271,6 +272,10 @@ footer>p{
     flex-direction: column;
     justify-content: center;
 }
+.about-description{
+    line-height: 1.5rem;
+    color: black;
+}
 .about-left-col{
     width:100%;
     margin: 3rem 0 1rem 0;
@@ -279,7 +284,16 @@ footer>p{
     padding-bottom: 0;
     margin-bottom: 0rem;
 }
-
+.content-background{
+    background-color: rgba(91, 117, 83, 0.1);
+    margin-bottom: 1.2rem;
+    padding-right: 1rem;
+    padding-left:1rem;
+    border-radius: .5rem;
+}
+.no-opacity{
+    opacity:1;
+}
 /* CONTACT PAGE*/
 
 .contact-title>p, .contact-title>h1{
@@ -314,6 +328,7 @@ footer>p{
     border-bottom: 2px solid #b87e7e;
     width: 20%;
     justify-self: center;
+    border-radius: 5px;
 }
 .form-group{
     margin-top: 1rem;
