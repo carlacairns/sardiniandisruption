@@ -63,6 +63,9 @@ h1{
 .no-wrap{
     white-space: nowrap;
 }
+.wrap{
+    
+}
 .no-margin{
     margin:0;
 }
@@ -122,20 +125,27 @@ header{
 
 .donate-label{
     font-weight: bold;
-    text-decoration: underline #b87e7e;
-    color: rgb(87, 85, 85);
+    text-decoration: underline solid 2px #b87e7e;
+    color: rgb(46, 45, 45);
+    margin-top: 1rem;
+
 }
-.donate-label{
-    margin-bottom: 1rem;
-}
+
 
 .donate-right-col{
     width:80%;
     justify-content:right;
     margin-top:1.5rem;
+    flex-shrink: 1;
 }
 .donate-img{
     max-width: 80%;
+}
+.donate-left-col{
+    max-width:38%;
+}
+.wrap{
+    overflow-wrap: anywhere;
 }
 /* NAV BAR*/
 nav{
