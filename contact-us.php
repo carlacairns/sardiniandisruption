@@ -1,5 +1,5 @@
 
-<?php
+<?php //contact form used
     if(isset($_POST['message']) && $_POST['message']!=''){
         //submit form if is set and not empty
 
