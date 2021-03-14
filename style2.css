@@ -32,13 +32,13 @@ li{
 }
 a{
     text-decoration: none;
-    color:rgb(29, 29, 29);
+    color:rgb(0, 0, 0);
 
 
 }
 .links:hover span{
     /* spanning the words in the link make the underline not effect the logo and size of margin*/
-    border-bottom: solid 2px #D0B8AC;
+    border-bottom: solid 2px #b16969;
     padding-bottom: 2px;
 
 }
@@ -105,7 +105,7 @@ header{
 }
 
 .logo>a{
-    color:rgb(85, 85, 85);
+    color:rgb(48, 48, 48);
 
 }
 
@@ -113,17 +113,19 @@ header{
     text-transform: uppercase;
     letter-spacing: .08rem;
     font-weight:600;
-    text-shadow: 1px 0px 1px rgba(165, 165, 165, 1);
+    text-shadow: 1px 0px 1px rgb(187, 187, 187);
 
     /* perfectly centered in the header*/
     margin-top:auto;
     margin-bottom: auto;
 }
 .logo:hover{
-    color:rgb(145, 143, 143);
+    color:rgb(110, 110, 110);
 
 }
 .donate>span{
+    font-weight: bold;
+    color:rgb(112, 112, 112);
     text-decoration: none;
     background-color: white;
     padding: .5rem .5rem .5rem .5rem;
@@ -133,14 +135,12 @@ header{
 }
 .donate>span:hover {
     box-shadow: 0 0 3px 2px rgba(235, 234, 234, 0.6);
-    color:rgb(84, 84, 84);
+    color:rgb(160, 160, 160);
 
 }
 
 .donate-label{
-    font-weight: bold;
     text-decoration: underline solid 2px #b87e7e;
-    color: rgb(46, 45, 45);
     margin-top: 1rem;
 
 }
@@ -170,14 +170,16 @@ nav{
     font-weight: 500;
 }
 .nav-bar>li>a>span{
-    color: #270905;
-    letter-spacing: .05rem;
+    color: #616161;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
 }
 
 .nav-bar>li{
     list-style: none;
-    font-size: .9rem;
-
+    font-size: 1rem;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: .5rem;
 }
 /* ARTICLES*/
 .grid{
@@ -219,16 +221,15 @@ body{
     font-weight: 500;
     font-size:.95rem;
     text-align:center;
-    letter-spacing: .01rem;
+    letter-spacing: .07rem;
     padding-bottom: .4rem;
 
 }
 .article-title>span{
     border-bottom: solid 2px #b16969;
     padding-bottom: 2px;
-    font-weight: bold;
-    color:rgb(43, 43, 43)
-}
+    color:rgb(43, 43, 43);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;}
 .article-title>span:hover{
     color:rgb(97, 97, 97)
 
@@ -445,6 +446,9 @@ input, textarea{
         margin-right: .4rem;
         margin-left: .4rem;
         font-size: .85rem;
+    }
+    .header-right{
+        padding-left:0;
     }
     li{
         text-align: center;
