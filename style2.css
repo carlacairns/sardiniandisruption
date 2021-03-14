@@ -105,7 +105,7 @@ header{
 }
 
 .logo>a{
-    color:rgb(48, 48, 48);
+    color:rgb(66, 66, 66);
 
 }
 
@@ -113,16 +113,13 @@ header{
     text-transform: uppercase;
     letter-spacing: .08rem;
     font-weight:600;
-    text-shadow: 1px 0px 1px rgb(187, 187, 187);
-
+    /* text-shadow: 1px 0px 1px rgb(187, 187, 187); */
+    /* text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255); */
     /* perfectly centered in the header*/
     margin-top:auto;
     margin-bottom: auto;
 }
-.logo:hover{
-    color:rgb(110, 110, 110);
 
-}
 .donate>span{
     font-weight: bold;
     color:rgb(112, 112, 112);
@@ -170,16 +167,16 @@ nav{
     font-weight: 500;
 }
 .nav-bar>li>a>span{
-    color: #616161;
+    color: #000000;
     letter-spacing: .1rem;
     text-transform: uppercase;
 }
 
 .nav-bar>li{
     list-style: none;
-    font-size: 1rem;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    letter-spacing: .5rem;
+    font-size: .8rem;
+    font-family: 'Roboto Condensed''Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: .01rem;
 }
 /* ARTICLES*/
 .grid{
@@ -217,19 +214,19 @@ body{
 }
   
 .article-title{
-    color:rgb(8, 8, 8);
+    color: #000000;
     font-weight: 500;
-    font-size:.95rem;
+    font-size:.85rem;
     text-align:center;
     letter-spacing: .07rem;
     padding-bottom: .4rem;
 
 }
 .article-title>span{
-    border-bottom: solid 2px #b16969;
+    border-bottom: solid 1px #b16969;
     padding-bottom: 2px;
-    color:rgb(43, 43, 43);
-    font-family: 'Fira Sans Extra Condensed', sans-serif;}
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto Condensed''Fira Sans Extra Condensed', sans-serif;}
 .article-title>span:hover{
     color:rgb(97, 97, 97)
 
