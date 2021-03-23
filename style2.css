@@ -137,9 +137,9 @@ header{
 }
 
 .donate-label{
-    text-decoration: underline solid 2px #b87e7e;
+    text-decoration: underline solid 1px #ac5252;
     margin-top: 1rem;
-
+    
 }
 
 
@@ -282,7 +282,7 @@ footer, footer>a, footer>p>a{
     align-self: center;
 }
 footer>p{
-    margin-left: .25rem;
+    margin-left:.25rem;
 }
 
 /* ABOUT PAGE */
@@ -310,11 +310,19 @@ footer>p{
     margin-bottom: 0rem;
 }
 .content-background{
-    background-color: rgba(91, 117, 83, 0.1);
     margin-bottom: 1.2rem;
     padding-right: 1rem;
     padding-left:1rem;
     border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.014);
+}
+.background-img >p{
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+}
+.background-img>.divider{
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+
 }
 .no-opacity{
     opacity:1;
@@ -442,14 +450,18 @@ input, textarea{
         list-style: none;
         margin-right: .4rem;
         margin-left: .4rem;
-        font-size: .85rem;
+        font-size: .7rem;
+        text-align: center;
     }
     .header-right{
         padding-left:0;
     }
     li{
-        text-align: center;
+        
         line-height: 1.1rem;
+        margin-left:1rem;
+        font-size:.7rem;
+
     }
     /*NAV FIXING*/
     .nav-bar {
@@ -460,20 +472,78 @@ input, textarea{
         padding: 0;
     }
     .nav-bar > li {
+        text-align: center;
         list-style: none;
-        font-size: .9rem;
+        font-size: .7rem;
         margin-bottom: .4rem;
 
     }
+   
     .nav-bar > li > a > span {
-        border-bottom: solid 2px #D0B8AC;
 
     }
+    .col1-col1{
+        grid-template-columns: 1fr;
+    }
+    .donate-label{
+        text-align: left;
+        margin: .5rem .5rem .2rem;
+        font-size: .8rem;
+        letter-spacing: 0;
+    }
+    
+    .donate-addrs>li{
+        letter-spacing: 1px;
+
+    }
+    .content-background {
+        border-radius: 0rem;
+        padding: .5rem 0 1.5rem 0;
+        box-shadow: 0 8px 8px -2px rgb(223, 222, 222); /* bottom box shadow= 4th value -*/
+
+    }
+    section .container{
+        margin:0;
+    }
+    .background-img{
+        background-image: url("images/puti2.jpg");
+        background-size: cover;
+        opacity:.8;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        margin-top: .1rem;
+    }
+    .background-img> p{
+        margin-left: 3%;
+        margin-right: 3%;
+        color: white;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    .background-img> .divider{
+        position: relative;
+        left: 40%;
+        border-bottom: 3px solid white;
+        box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+        width: 20%;
+        border-radius: 0;
+    }
+    .margin-top-increase {
+        margin-top: 0;
+    }
+    
 }
 @media( min-width: 500px) and (max-width:800px){ 
     /* if device is smaller than 500 px */
 
     .col1-col2{
+        grid-template-columns: 1fr;
+    }
+    .col1-col1{
         grid-template-columns: 1fr;
     }
     /* ABOUT PAGE SPECIFIC*/
@@ -502,6 +572,51 @@ input, textarea{
         justify-content: center;
 
     }
+    
+    .donate-label{
+        text-align: left;
+        letter-spacing:0;
+    }
+    .donate-addrs>li{
+        letter-spacing: 1px;
+        font-size: .8rem;
 
+    }
+    .nav-bar > li {
+        list-style: none;
+        font-size: .7rem;
+    }
+    .content-background {
+        border-radius: 0rem;
+        margin-top:0;
+        box-shadow: 0 8px 8px -2px rgb(223, 222, 222); /* bottom box shadow= 4th value -*/
+
+    }
+    .background-img> p{
+        color: white;
+        opacity:1;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        position: relative;
+        font-weight: 500;
+        bottom:2rem;
+        margin-bottom: 0;
+    }
+    .background-img{
+        background-image: url("images/puti2.jpg");
+        background-size: cover;
+        opacity:.8;
+        padding-top: 7rem;
+        padding-bottom: 9rem;
+        margin-top: .1rem;
+    }
+    .divider{
+        border-bottom:solid 3px white;
+        border-radius: 0;
+    }
     /* TODO add more pictures to fill the bottom white space of 500 - 800 px!!!!*/
+    .no-mobile{
+        display: none;
+    }
 }
