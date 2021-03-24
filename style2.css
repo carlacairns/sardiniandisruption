@@ -39,7 +39,6 @@ a{
 .links:hover span{
     /* spanning the words in the link make the underline not effect the logo and size of margin*/
     border-bottom: solid 2px #b16969;
-    padding-bottom: 2px;
 
 }
 h1{
@@ -83,10 +82,13 @@ h1{
 .no-margin{
     margin:0;
 }
+.col1{
+    grid-template-columns: 1fr;
+}
 /* HEADER */
 
 header{
-    background-color: #faece3;
+    background-color: #c450418a;
     padding-top: .2rem;
     padding-bottom: .2rem;
     border-bottom: 1px  solid rgb(212, 212, 212);
@@ -98,14 +100,26 @@ header{
 
 .header-right>li{
     list-style: none;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     font-size: .85rem;
+    color:white;
+    font-weight: bold;
+    line-height: 1.1rem;
+    text-align: center;
 
+
+}
+.header-right>li>a {
+    color:white;
+}
+.white-links:hover span {
+    border-bottom: solid 2px white;
+    padding-bottom: 2px;
 }
 
 .logo>a{
-    color:rgb(66, 66, 66);
+    color:white;
 
 }
 
@@ -121,13 +135,13 @@ header{
 }
 
 .donate>span{
-    font-weight: bold;
-    color:rgb(112, 112, 112);
+    color: black;
     text-decoration: none;
     background-color: white;
-    padding: .5rem .5rem .5rem .5rem;
+    padding: .35rem .35rem .35rem .35rem;
     border-radius: .2rem;
     border: 1px solid rgb(238, 238, 238);
+    font-weight: normal;
 
 }
 .donate>span:hover {
@@ -147,6 +161,7 @@ header{
     justify-content:right;
     margin-top:1.5rem;
     flex-shrink: 1;
+    text-decoration-color: white;
 }
 .donate-img{
     max-width: 80%;
@@ -165,15 +180,21 @@ nav{
     width:100%;
     justify-content: space-around;
     font-weight: 500;
+    padding-left: 3%;
+    text-align: center;
 }
 .nav-bar>li>a>span{
+    text-align: center;
     color: #000000;
     letter-spacing: .1rem;
     text-transform: uppercase;
+    line-height: 1rem;
 }
 
 .nav-bar>li{
     list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: .8rem;
     font-family: 'Roboto Condensed''Fira Sans Extra Condensed', sans-serif;
     letter-spacing: .01rem;
@@ -269,7 +290,7 @@ footer{
     text-align: center;
     justify-content: center;
 
-    background-color: #b87e7e;
+    background-color: #c45041b7;
     height: 2.5rem;
     border-top: 1px  solid rgb(231, 231, 231);
 
@@ -305,24 +326,31 @@ footer>p{
     width:100%;
     margin: 3rem 0 1rem 0;
 }
+.about-title{
+    color:white;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+    
+}
 .about-divider{
     padding-bottom: 0;
     margin-bottom: 0rem;
 }
 .content-background{
+    margin-top:0;
     margin-bottom: 1.2rem;
     padding-right: 1rem;
     padding-left:1rem;
     border-radius: .5rem;
     background-color: rgba(0, 0, 0, 0.014);
 }
-.background-img >p{
+.background-img > .about-description {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-
-}
-.background-img>.divider{
-    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-
+    
+    margin-bottom: 2.5rem;
 }
 .no-opacity{
     opacity:1;
@@ -416,6 +444,29 @@ input, textarea{
     box-shadow: 0 0 3px 4px rgba(221, 34, 34, 0.6);
 
 }
+
+.background-img>.divider{
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+    border-bottom:solid 3px white;
+}
+.background-img{
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    background-image: url("images/puti-crop.jpg");
+    background-size: cover;
+    opacity:.8;
+}
+.background-img> .donate-title{
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
 /* RESPONSIVE */
 
 @media(max-width:500px){ 
@@ -506,35 +557,15 @@ input, textarea{
         margin:0;
     }
     .background-img{
-        background-image: url("images/puti2.jpg");
-        background-size: cover;
-        opacity:.8;
         padding-top: 1.5rem;
-        padding-bottom: 2rem;
-        margin-top: .1rem;
+        padding-bottom: 2rem; 
     }
-    .background-img> p{
-        margin-left: 3%;
-        margin-right: 3%;
-        color: white;
-        font-family: 'Fira Sans Extra Condensed', sans-serif;
-        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-        font-size: 1.4rem;
-        letter-spacing: 2px;
-        font-weight: 500;
+    .background-img> .donate-title{
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
     }
-    .background-img> .divider{
-        position: relative;
-        left: 40%;
-        border-bottom: 3px solid white;
-        box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-
-        width: 20%;
-        border-radius: 0;
-    }
-    .margin-top-increase {
-        margin-top: 0;
-    }
+    
+    
     
 }
 @media( min-width: 500px) and (max-width:800px){ 
@@ -589,27 +620,19 @@ input, textarea{
     .content-background {
         border-radius: 0rem;
         margin-top:0;
-        box-shadow: 0 8px 8px -2px rgb(223, 222, 222); /* bottom box shadow= 4th value -*/
 
     }
-    .background-img> p{
-        color: white;
-        opacity:1;
-        font-family: 'Fira Sans Extra Condensed', sans-serif;
-        font-size: 2rem;
-        letter-spacing: 1px;
-        position: relative;
-        font-weight: 500;
+    .background-img> .donate-title{
+       
+        font-size: 2.5rem;
         bottom:2rem;
-        margin-bottom: 0;
     }
     .background-img{
-        background-image: url("images/puti2.jpg");
-        background-size: cover;
-        opacity:.8;
-        padding-top: 7rem;
-        padding-bottom: 9rem;
-        margin-top: .1rem;
+
+        padding-bottom: 8rem;
+        /* padding-top: 1rem;
+        padding-bottom: 3rem;
+        margin-top: .1rem; */
     }
     .divider{
         border-bottom:solid 3px white;
@@ -619,4 +642,7 @@ input, textarea{
     .no-mobile{
         display: none;
     }
+}
+@media( min-width: 680px) and (max-width:750px){ 
+
 }
