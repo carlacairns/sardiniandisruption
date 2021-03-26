@@ -482,7 +482,9 @@ input, textarea{
     .col1-col2{
         grid-template-columns: 1fr;
     }
-
+    .col1point2-col1{
+        grid-template-columns: 1fr;
+    }
     /*specifically for ABOUT PAGE*/
     .about-content{
         margin: 0 0 0 0;
@@ -561,6 +563,7 @@ input, textarea{
     section .container{
         margin:0;
     }
+    /* about and donate page */
     .background-img{
         padding-top: 1.5rem;
         padding-bottom: 2rem;
@@ -571,17 +574,22 @@ input, textarea{
         font-size: 1.9rem;
         margin-bottom: 1rem;
     }
-    
-    
+    /* home page */
+    .article-description{
+        font-size: .9rem;
+    }
     
 }
-@media( min-width: 500px) and (max-width:800px){ 
+@media( min-width: 500px) and (max-width:900px){ 
     /* if device is smaller than 500 px */
 
     .col1-col2{
         grid-template-columns: 1fr;
     }
     .col1-col1{
+        grid-template-columns: 1fr;
+    }
+    .col1point2-col1{
         grid-template-columns: 1fr;
     }
     /* ABOUT PAGE SPECIFIC*/
@@ -643,6 +651,9 @@ input, textarea{
     /* TODO add more pictures to fill the bottom white space of 500 - 800 px!!!!*/
     .no-mobile{
         display: none;
+    }
+    .article-description{
+        font-size: .9rem;
     }
 }
 @media( min-width: 800px) and (max-width:750px){ 
