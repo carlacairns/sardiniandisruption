@@ -336,7 +336,7 @@ footer>p{
 .about-title{
     color:white;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-    font-size:3rem;
+    font-size:2rem;
     margin: 1rem 3% 2rem 3%;
 }
 .about-divider{
@@ -369,32 +369,41 @@ footer>p{
     margin:0;
     padding:0;
     text-align: center;
+    font-weight: bold;
+    color:white;
     
 }
 .contact-title{
     margin-bottom: 2rem;
-   
+
+}
+.contact-background{
+    background-color: #5a171757;
+    padding: 2rem 0 2rem 0;
+    margin: 0 3rem 0 3rem;
 }
 .contact-title>h1{
     margin: 1rem 0 .3rem 0;
-    color: rgb(68, 68, 68)
 }
 .contact-title>p{
     margin-bottom: .1rem;
     font-size: .8rem;
+    color: rgba(255, 255, 255, 0.952);
+
 }
 .contact-content{
     justify-content: center;
-    color:rgb(68, 68, 68);
+    color:white;
 
 }
+
 .spacing{
     margin-bottom: 2rem;
 }
 .divider{
     position: relative;
     left: 40%;
-    border-bottom: 2px solid #b87e7e;
+    border-bottom: 2px solid white;
     width: 20%;
     justify-self: center;
     border-radius: 5px;
@@ -406,8 +415,9 @@ footer>p{
     margin-right: 1rem;
     text-align: right;
     display: inline-block;
-    text-decoration: underline #b87e7e;
-    color: rgb(58, 58, 58);
+    text-decoration: underline 2px #b87e7e;
+    color: white;
+    font-weight: bold;
 }
 .col-sm{
     width:25%;
@@ -427,7 +437,8 @@ footer>p{
     
     text-align: center;
     padding: .5rem .5rem;
-    background-color: #eed8c9;
+    background-color: #54586b;
+    color: white;
     border:1px solid rgb(212, 212, 212);
     border-radius: 4px;
 }
@@ -440,10 +451,10 @@ input, textarea{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .btn-primary:hover{
     box-shadow: 0 0 3px 4px rgba(215, 215, 215, 0.6);
-    color: rgb(121, 120, 120);
     cursor: pointer;
 
 }
@@ -579,6 +590,16 @@ input, textarea{
         font-size: .9rem;
     }
     
+    /* conact page*/
+    .contact-background{
+        margin: 0 1rem 0 1rem;
+    }
+    .contact-title > p{
+        font-size: .65rem;
+    }
+    .col-lg{
+        width: 60%;
+    }
 }
 @media( min-width: 500px) and (max-width:900px){ 
     /* if device is smaller than 500 px */
@@ -656,6 +677,4 @@ input, textarea{
         font-size: .9rem;
     }
 }
-@media( min-width: 800px) and (max-width:750px){ 
 
-}

@@ -1,2 +1,13 @@
-//complete TODO
-//window.location = $(".header_title").data("location");
+
+function changeText(text)
+    {
+        let display = document.getElementById('text-display');
+        display.innerHTML = "";
+        display.innerHTML = text;
+    }
+function changeback(text)
+    {
+        let display = document.getElementById('text-display');
+        display.innerHTML = "";
+        display.innerHTML = text;
+    }

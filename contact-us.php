@@ -70,8 +70,8 @@ else{
     <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;400;500&display=swap" rel="stylesheet">     <meta charset="utf-8">
-    <meta charset="utf-8">
-<meta name="description" **TODO**>
+    <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" **TODO**>
 <title>The Sardinian Disruption</title>
 </head>
 <body>
@@ -129,12 +129,12 @@ else{
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="links">
+                        <a href="#" title="Coming Soon!" class="links">
                             <span>Colluvium</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="links">
+                        <a href="#" title="Coming Soon!" class="links">
                             <span>Caves and Man</span>
                         </a>
                     </li>
@@ -149,8 +149,8 @@ else{
     </nav>
 
 
-<div class="container contact-content ">
-    
+<div class="background-img  contact-content ">
+    <div class="contact-background">
         <div class="contact-title">
             <h1> Leave Us a Message!</h1>
             <p> Leave a message if you have a question, comment or suggestion.</p>
@@ -190,8 +190,8 @@ else{
                 <input type="submit" class="btn-primary " value="Send Message"></input>
         </div>
     </form>
+    </div>
 </div>
-
 </div>
 
 <footer>
