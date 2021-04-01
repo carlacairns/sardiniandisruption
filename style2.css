@@ -262,7 +262,7 @@ body{
     position: relative;
     bottom:1rem;
     text-align: center;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
 }
@@ -550,6 +550,7 @@ input, textarea{
         margin-bottom: .4rem;
 
     }
+    
    
     .col1-col1{
         grid-template-columns: 1fr;
@@ -644,6 +645,9 @@ input, textarea{
     }
     .nav-bar > li {
         list-style: none;
+        font-size: .7rem;
+    }
+    .nav-bar > li > a > span{
         font-size: .7rem;
     }
     .content-background {
