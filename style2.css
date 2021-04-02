@@ -249,6 +249,7 @@ img:hover{
     border-bottom: solid 1px #b16969;
     padding-bottom: 2px;
     color:rgb(0, 0, 0);
+
 }
 
 .article-title>span:hover{
@@ -268,6 +269,7 @@ img:hover{
     color:rgb(59, 59, 59);
     padding: .3rem 1rem 0rem 1rem;
     border-radius: .1rem;
+    background-color: white;
 
 
 }

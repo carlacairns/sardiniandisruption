@@ -1,4 +1,4 @@
-.article-heading>.MF-title{
+.article-heading>.page-title{
     margin: 1rem 0 .2rem 0;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -22,7 +22,7 @@
    
     
 }
-.article-heading>.MF-title>span{
+.article-heading>.page-title>span{
     border-bottom: solid 2px #b16969;
     padding-bottom: 2px;
     color:rgb(0, 0, 0);
@@ -68,6 +68,7 @@
 .figure{
     width:90%;
     height:90%;
+    margin-bottom: 0;
 }
 .long-figure{
     width:70%;
