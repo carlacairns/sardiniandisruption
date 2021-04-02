@@ -1,0 +1,119 @@
+.article-heading>.MF-title{
+    margin: 1rem 0 .2rem 0;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+.article-heading>.author {
+    margin: 0 0 .5rem 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .06rem;
+    text-decoration: none;
+    padding-top: 5px;
+}
+.article-heading>.date{
+    margin-bottom: 0;
+    margin-top:0;
+    font-size: .8rem;
+}
+.article-heading{
+    margin: 1rem 30% 3rem 30%;
+   
+    
+}
+.article-heading>.MF-title>span{
+    border-bottom: solid 2px #b16969;
+    padding-bottom: 2px;
+    color:rgb(0, 0, 0);
+}
+.center{
+    text-align: center;
+}
+.no-indent{
+    text-indent: 0;
+}
+.article-p{
+    text-align: justify;
+    text-indent: 2rem;
+    margin:0;
+    line-height: 1.5rem;
+}
+.insert{
+    margin: 0 10% 0 10%;
+}
+.grid{
+    display: grid;
+}
+.article-col1-col1{
+    grid-template-columns: 1fr 1fr;
+}
+.article-col1-col1-auto{
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: self-end;
+}
+.article-col1{
+    grid-template-columns: 1fr;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align:left;
+}
+.add-padding-top{
+    padding-top:1rem;
+}
+.figure{
+    width:90%;
+    height:90%;
+}
+.long-figure{
+    width:70%;
+    height:70%;
+}
+.figure-margin{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.figure-title{
+    text-align: center;
+    margin-top:0;
+    text-decoration: underline 1px black;
+    font-size: 1rem;
+}
+h5{
+    font-weight: normal;
+    color: rgb(11, 11, 11);
+}
+.section-title{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    font-weight: normal;
+}
+.section-title>span{
+    border-bottom: solid 1px #b16969;
+    padding-bottom: 2px;
+    color:rgb(0, 0, 0);
+}
+.col1-figure{
+    width:60%;
+    height:90%;
+}
+.footnotes >li{
+    list-style-type: decimal;
+}
+.footnote-ref, .footnote-back{
+    color: #022c80;
+}
+.margins{
+    margin-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.text-color{
+    color: rgb(87, 87, 87);
+}

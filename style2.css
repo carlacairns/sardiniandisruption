@@ -231,9 +231,7 @@ img:hover{
     box-shadow: none;
 
  }
-body{
-    background-color: #f8f7f7;
-}
+
 .article-margin{
     margin: 1rem 1rem 1rem 1rem;
 }
@@ -267,7 +265,6 @@ body{
     letter-spacing: 0.05rem;
 }
 .article-catagory>span{
-    background-color: #F9F5F1;
     color:rgb(59, 59, 59);
     padding: .3rem 1rem 0rem 1rem;
     border-radius: .1rem;
