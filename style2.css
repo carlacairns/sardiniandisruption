@@ -480,7 +480,7 @@ input, textarea{
     color: white;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     font-weight: 700;
     margin-bottom: 2.5rem;
