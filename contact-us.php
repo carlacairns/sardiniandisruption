@@ -124,7 +124,7 @@ else{
         <div class="container d-flex">
                 <ul class="d-flex nav-bar">
                     <li>
-                        <a href="#" class="links">
+                        <a href="WhyTheNuraghiWereBuilt.html" class="links">
                             <span>Why the Nuraghi Were Built</span>
                         </a>
                     </li>
@@ -139,7 +139,7 @@ else{
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="links">
+                        <a href="TheDeathofTheMegaFauna.html" class="links">
                             <span>Death of the Megafauna</span>
                         </a>
                     </li>
