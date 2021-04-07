@@ -192,7 +192,7 @@ nav{
     letter-spacing: .1rem;
     text-transform: uppercase;
     line-height: 1rem;
-    font-size:.8rem;
+    font-size:.7rem;
 }
 
 .nav-bar>li{
@@ -355,8 +355,6 @@ footer>p{
     margin-right: 3%;
     color: white;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15), 1px -1px 0 rgb(0, 0, 0, 0.15), -1px 1px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 rgba(0, 0, 0, 0.15);
-    /* font-size: ; */
     margin-bottom: 2.5rem;
 }
 .no-opacity{
@@ -473,6 +471,7 @@ input, textarea{
     background-image: url("images/puti-crop.jpg");
     background-size: cover;
     opacity:.8;
+    background-position: 50%;
 }
 .background-img> .donate-title{
     margin-left: 3%;

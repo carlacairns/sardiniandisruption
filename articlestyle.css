@@ -12,6 +12,9 @@
     text-decoration: none;
     padding-top: 5px;
 }
+.article-number{
+    font-weight: bold;
+}
 .article-heading>.date{
     margin-bottom: 0;
     margin-top:0;
@@ -151,6 +154,9 @@ h5{
 img:hover{
     box-shadow: none;
  }
+ .figure-margin1{
+    margin: 1rem 0 1rem 0;
+}
 
 @media(max-width:500px){ 
 
@@ -175,6 +181,7 @@ figure{
 .figure-title{
     margin-bottom: 1rem;
     margin-top:.5rem;
+    font-size: .8rem;
 }
 .margin-top1{
     margin-top:1rem;

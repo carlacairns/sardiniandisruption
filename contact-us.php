@@ -71,7 +71,7 @@ else{
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;400;500&display=swap" rel="stylesheet">     <meta charset="utf-8">
     <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" **TODO**>
+    <meta name="Tens of millions of Pleistocene animals do not disappear in a few thousand years except by a force far beyond current perceptions. Explore the plasma driven force responsible for the disappearance of the Megafauna and the landscape on Sardinia.">
 <title>The Sardinian Disruption</title>
 </head>
 <body>
@@ -106,12 +106,12 @@ else{
                     </a>
                 </li>
                 <li>
-                    <a href="about.html" class="links">
+                    <a href="about.html" class="white-links">
                         <span>About</span>
                     </a>
                 </li>
                 <li>
-                    <a href="contact-us.php" class="links">
+                    <a href="contact-us.php" class="white-links">
                         <span>Contact Us</span>
                     </a>
                 </li>
