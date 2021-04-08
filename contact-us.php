@@ -1,7 +1,22 @@
 
 <?php //contact form used
-    if(isset($_POST['message']) && $_POST['message']!=''){
-        //submit form if is set and not empty
+
+   /*  if(isset($_POST['submit'])){
+        $name =$_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+        $secretKey = "";
+        $responseKey = $_POST['g-recaptcha-response'];
+        $userIP = $_SERVER['REMOTE_ADDR'];
+
+        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteIP=$userIP";
+        $response = file_get_contents($url);
+        echo $response;
+    } */
+
+    if(isset($_POST['message']) && $_POST['message']!='' && isset($_POST['submit'])){
+        //submit form if message is set and not empty and submit button pressed
 
     if(isset($_POST['email']) && $_POST['email']!=''){
         //if user has input an email, validate it.
@@ -12,7 +27,7 @@
             $subject = $_POST['subject'];
             $message = $_POST['message'];
         
-            $to = "carla@sardiniandisruption.com";
+            $to = "deadmammoth@protonmail.com";
             $body= "";
         
             $body .= "From: " .$name. "\r\n";
@@ -41,7 +56,7 @@
         $subject = $_POST['subject'];
         $message = $_POST['message'];
     
-        $to = "carla@sardiniandisruption.com";
+        $to = "deadmammoth@protonmail.com";
         $body= "";
     
         $body .= "From: " .$name. "\r\n";
@@ -62,6 +77,8 @@ else{
     $emptyMessage = "invalid_entry";
  
 }
+
+
 ?>
 
 <!doctype html>
@@ -73,20 +90,15 @@ else{
     <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Tens of millions of Pleistocene animals do not disappear in a few thousand years except by a force far beyond current perceptions. Explore the plasma driven force responsible for the disappearance of the Megafauna and the landscape on Sardinia.">
 <title>The Sardinian Disruption</title>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
 <?php
-    if($messageSent):
+    if( true):
 
 ?>
-<script>
-    alert("Message recieved!")
-</script>
 
-<?php
-    else:
-?>
 <div class="page-container">
     <div class="content-wrap">
     <header>
@@ -180,14 +192,16 @@ else{
             </div>
         </div>
         <div class="form-group">
-            <label for="inputMessage" class="col-sm control-label input-message" required>Message</label>
+            <label for="inputMessage" class="col-sm control-label input-message" >Message</label>
 
             <div class="col-lg">
-                <textarea  name="message" rows="7" class="form-control <?= $emptyMessage ?? "" ?>" id="inputMessage"></textarea>
+                <textarea  name="message" rows="7" class="form-control <?= $emptyMessage ?? "" ?>" id="inputMessage" required></textarea>
             </div>
         </div>
+        <div class="g-recaptcha d-flex center captcha" data-sitekey="6LcA16AaAAAAAOLLZhdc1jBfs7hrR88mUj8oibSG"></div>
+
         <div class="form-group submit-btn">
-                <input type="submit" class="btn-primary " value="Send Message"></input>
+                <input type="submit" name="submit" class="btn-primary " value="Send Message"></input>
         </div>
     </form>
     </div>
