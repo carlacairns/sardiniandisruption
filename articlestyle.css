@@ -219,8 +219,8 @@ img{
         line-height: 1.6rem;
     }
     .figure-margin{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .figure{
         width:100%;
