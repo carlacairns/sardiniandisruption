@@ -69,6 +69,12 @@
     padding-top:1rem;
 }
 .figure{
+    width:100%;
+    height:100%;
+    margin-bottom: 0;
+    padding-top:2rem;
+}
+.figure-large{
     width:90%;
     height:90%;
     margin-bottom: 0;
@@ -88,6 +94,7 @@
     font-size: 1rem;
     padding-top: .3rem;
 }
+
 h5{
     font-weight: normal;
     color: rgb(11, 11, 11);
@@ -159,7 +166,9 @@ img:hover{
 }
 
 @media(max-width:500px){ 
-
+.article-col1-col1 {
+    grid-template-columns: 1fr;
+}
 .article-heading {
     margin:0;
 }
@@ -175,14 +184,17 @@ img:hover{
 figure{
     margin: 1rem 0 2rem 0;
 }
+
 .figure-margin1{
     margin: 1rem 0 1rem 0;
 }
 .figure-title{
     margin-bottom: 1rem;
-    margin-top:.5rem;
+    margin-top:1rem;
     font-size: .8rem;
+    text-align: center;
 }
+
 .margin-top1{
     margin-top:1rem;
 }
@@ -198,8 +210,10 @@ figure{
 figcaption{
     font-size: .7rem;
 }
+img{
+    padding-top: 2rem;
 }
-
+}
 @media( min-width: 500px) and (max-width:900px){
     .article-heading > .page-title{
         line-height: 1.6rem;
