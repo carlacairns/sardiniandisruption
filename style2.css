@@ -486,6 +486,53 @@ input, textarea{
     font-weight: 700;
     margin-bottom: 2.5rem;
 }
+
+/* coming soon page */
+
+
+.coming-soon-img:hover{
+    box-shadow: none;
+
+}
+.coming-soon-img{
+    width: 15%;
+}
+.redish-color-divider{
+    border-bottom: 2px solid#ac5252;
+    width: 20%;
+    justify-self: center;
+    align-self: center;
+}
+.coming-soon-content{
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    
+}
+.coming-soon-background{
+    /* background-image: url(website/carolinabays-texas.jpg); */
+    
+}
+.coming-soon-text>h1{
+    margin-top: 0rem;
+}
+.center-mammoth{
+    position: relative;
+    left:23%;
+}
+.center-cs-bottom-divider{
+    padding-top: 1rem;
+    margin-left:40%;
+}
+.divider-width{
+    width:35%;
+}
+.primary-color{
+    background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 64%,#fefefe 100%);
+}
+
 /* RESPONSIVE */
 
 @media(max-width:500px){ 

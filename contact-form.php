@@ -4,7 +4,7 @@
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $to = "admin@sardinianDisruption.com";
+    $to = "";
     $body= "";
 
     $body .= "From: " .$name. "\r\n";
