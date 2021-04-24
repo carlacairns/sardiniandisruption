@@ -4,7 +4,7 @@ html,body{
    margin:0;
    padding:0;
    font-family: 'Raleway', sans-serif;
-   
+   overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -489,15 +489,14 @@ input, textarea{
 
 /* coming soon page */
 .coming-soon-wrap{
-    padding-bottom:12rem;
+    padding-bottom:13rem;
 }
 .main-div{
     position: relative;
 }
 .sub-div{
     position:absolute;
-    bottom: 0px;
-    left:0px;
+    
 }
 .coming-soon-img:hover{
     box-shadow: none;
@@ -520,12 +519,25 @@ input, textarea{
     margin-top: 2%;
     
 }
-.coming-soon-background{
+.coming-soon-bottom{
     background-image: url(website/MF_carolina_bays_google.png);
     
     padding:7%;
     width:100%;
     box-shadow: 0 0 1px 1px white inset;
+    background-position:bottom; 
+    bottom: 0px;
+    left:0px;
+}
+.coming-soon-top{
+    background-image: url(website/MF_carolina_bays_google.png);
+    
+    padding:15%;
+    width:100%;
+    box-shadow: 0 0 1px 1px white inset;
+    background-position:bottom; 
+
+    
 }
 .coming-soon-text>h1{
     margin-top: 0rem;
@@ -542,12 +554,47 @@ input, textarea{
     width:35%;
 }
 .primary-color{
-    background: rgba(247, 247, 247, 0.685);
+    background: white;
 }
 
+.no-display{
+    display: none;
+}
 /* RESPONSIVE */
 
+
 @media(max-width:500px){ 
+    .no-display{
+        display:unset;
+    }
+   /* coming soon page */
+   .coming-soon-bottom{
+       padding:18%;
+   }
+   .coming-soon-top{
+    padding:15%;
+}
+    .coming-soon-background{
+        padding:20%;
+    }
+    .coming-soon-content {
+        margin-top: 48%;
+        background-color: #faf7f6da;
+        padding: 2rem 1rem 3rem 1rem;
+        background:rgba(236, 235, 235, 0.37);
+    }
+    .coming-soon-img{
+        width:25%;
+    }
+    .center-mammoth{
+        left:8%;
+    }
+    .redish-color-divider{
+        width:30%;
+    }
+    .divider-width{
+        width:40%;
+    }
 /* if device is smaller than 500 px */
     .col1-col2{
         grid-template-columns: 1fr;
