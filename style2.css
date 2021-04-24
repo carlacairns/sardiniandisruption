@@ -569,7 +569,7 @@ input, textarea{
     }
    /* coming soon page */
    .coming-soon-bottom{
-       padding:18%;
+       padding:19%;
    }
    .coming-soon-top{
     padding:15%;
@@ -579,9 +579,7 @@ input, textarea{
     }
     .coming-soon-content {
         margin-top: 48%;
-        background-color: #faf7f6da;
-        padding: 2rem 1rem 3rem 1rem;
-        background:rgba(236, 235, 235, 0.37);
+       
     }
     .coming-soon-img{
         width:25%;
@@ -709,6 +707,23 @@ input, textarea{
     }
 }
 @media( min-width: 500px) and (max-width:900px){ 
+    .no-display{
+        display:unset;
+    }
+    /* coming soon page */
+    .coming-soon-content{
+        margin-top:35%;
+       
+    }
+    .coming-soon-bottom{
+        padding:12%;
+    }
+    .coming-soon-top{
+     padding:10%;
+ }
+     .coming-soon-background{
+         padding:20%;
+     }
     /* if device is smaller than 500 px */
 
     .col1-col2{
