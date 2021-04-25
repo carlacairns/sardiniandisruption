@@ -92,7 +92,8 @@ h1{
 /* HEADER */
 
 header{
-    background-color: #c450418a;
+    background-color: #bd6c61;
+    /* looks like not the same color as footer on my monitor, but same */
     padding-top: .2rem;
     padding-bottom: .2rem;
     border-bottom: 1px  solid rgb(212, 212, 212);
@@ -528,6 +529,7 @@ input, textarea{
     background-position:bottom; 
     bottom: 0px;
     left:0px;
+    opacity:.8;
 }
 .coming-soon-top{
     background-image: url(website/MF_carolina_bays_google.png);
