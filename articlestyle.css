@@ -13,7 +13,7 @@
     padding-top: 5px;
 }
 .article-number{
-    font-weight: bold;
+    font-weight: 500;
 }
 .article-heading>.date{
     margin-bottom: 0;
@@ -204,9 +204,7 @@ figure{
 .margin-top2{
     margin-top:2rem;
 }
-.insert{
-    margin:0;
-}
+
 figcaption{
     font-size: .7rem;
 }
