@@ -140,12 +140,12 @@ else{
                      </a>
                  </li>
                  <li>
-                     <a href="#" title="Coming Soon!" class="links">
+                     <a href="coming-soon.html" title="Coming Soon!" class="links">
                          <span>Colluvium</span>
                      </a>
                  </li>
                  <li>
-                     <a href="#" title="Coming Soon!" class="links">
+                     <a href="coming-soon.html" title="Coming Soon!" class="links">
                          <span>Caves and Man</span>
                      </a>
                  </li>
@@ -208,8 +208,12 @@ else{
 </div>
 
 <footer>
- <p>Hosted by <a href="https://www.1776hosting.com"> 1776 Hosting. </a></p>
- <p> Developed by <a href="https://github.com/carlacairns">cstraya</a></p>
+    <div>
+    Hosted by <a href="https://www.1776hosting.com"> 1776 Hosting. </a>
+    Developed by <a href="https://github.com/carlacairns">cstraya.</a>
+    <br>
+    © 2021. All Rights Reserved.
+    </div>
 </footer>
 </div>
 

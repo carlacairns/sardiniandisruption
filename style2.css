@@ -284,6 +284,7 @@ img:hover{
     opacity:.8;
 }
 /* FOOTER*/
+
 footer{
     /* page wrapper necessary */
     position: absolute;
@@ -298,15 +299,17 @@ footer{
     z-index: 1;
 
 }
-footer, footer>a, footer>p>a{
+footer, footer>div>a {
     color:rgb(255, 255, 255);
     font-weight: bold;
-    font-size: .8rem;
+    font-size: .7rem;
     align-self: center;
     letter-spacing: 1px;
+    padding:.8rem 0 .8rem 0;
 }
 footer>p{
-    margin-left:.25rem;
+    margin-left:.15rem;
+    margin-right: .15rem;
 }
 
 /* ABOUT PAGE */
