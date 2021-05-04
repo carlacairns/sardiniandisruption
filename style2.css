@@ -541,7 +541,7 @@ input, textarea{
     width:100%;
     box-shadow: 0 0 1px 1px white inset;
     background-position:bottom; 
-
+    opacity:.8;
     
 }
 .coming-soon-text>h1{
