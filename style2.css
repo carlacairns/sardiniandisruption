@@ -75,6 +75,10 @@ h1{
 .text-center{
     text-align: center;
 }
+.border{
+    margin-bottom: 1rem;
+    margin-top:.5rem;
+}
 .no-wrap{
     overflow-y:scroll; 
 
@@ -236,7 +240,7 @@ img:hover{
  }
 
 .article-margin{
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
   
 .article-title{
@@ -285,11 +289,10 @@ img:hover{
 .article-one>a>picture>img{
     opacity:.8;
 }
-.article-three>a>picture>img{
-    opacity:.9;
-}
-.cave-pic-height{
+
+.pic-height{
     height:37%;
+    width:100%
 }
 /* FOOTER*/
 
@@ -577,9 +580,14 @@ input, textarea{
 
 
 @media(max-width:500px){ 
-    .no-display{
-        display:unset;
+    .border{
+        margin-bottom: 1rem;
     }
+    .pic-height{
+        height:max-content;
+        width:100%
+    }
+    
    /* coming soon page */
    .coming-soon-bottom{
        padding:18%;
@@ -612,6 +620,10 @@ input, textarea{
     }
     .col1point2-col1{
         grid-template-columns: 1fr;
+    }
+    .col1-col2-col1{
+        grid-template-columns: 1fr;
+
     }
     /*specifically for ABOUT PAGE*/
     .about-content{
@@ -690,7 +702,9 @@ input, textarea{
 
     }
     section .container{
-        margin:0;
+        margin-left:0;
+        margin-right:0;
+
     }
     /* about and donate page */
     .background-img{
@@ -720,6 +734,10 @@ input, textarea{
     }
 }
 @media( min-width: 500px) and (max-width:900px){ 
+    .pic-height{
+        height:max-content;
+        width:100%
+    }
     .no-display{
         display:unset;
     }
@@ -746,6 +764,9 @@ input, textarea{
         grid-template-columns: 1fr;
     }
     .col1point2-col1{
+        grid-template-columns: 1fr;
+    }
+    .col1-col2-col1{
         grid-template-columns: 1fr;
     }
     /* ABOUT PAGE SPECIFIC*/
