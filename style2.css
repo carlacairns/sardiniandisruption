@@ -288,6 +288,9 @@ img:hover{
 .article-three>a>picture>img{
     opacity:.9;
 }
+.cave-pic-height{
+    height:37%;
+}
 /* FOOTER*/
 
 footer{
