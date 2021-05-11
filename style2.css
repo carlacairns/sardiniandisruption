@@ -211,7 +211,7 @@ nav{
     display:grid;
 }
 .col1-col2-col1{
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
 }
 .col1point2-col1{
     grid-template-columns: 1.2fr 1fr;
@@ -284,6 +284,9 @@ img:hover{
 
 .article-one>a>picture>img{
     opacity:.8;
+}
+.article-three>a>picture>img{
+    opacity:.9;
 }
 /* FOOTER*/
 
