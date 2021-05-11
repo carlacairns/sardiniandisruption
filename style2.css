@@ -580,6 +580,9 @@ input, textarea{
 
 
 @media(max-width:500px){ 
+    .no-display{
+        display: unset;
+    }
     .border{
         margin-bottom: 1rem;
     }
@@ -590,7 +593,7 @@ input, textarea{
     
    /* coming soon page */
    .coming-soon-bottom{
-       padding:18%;
+       padding:20%;
    }
    .coming-soon-top{
     padding:15%;
