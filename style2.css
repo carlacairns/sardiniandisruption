@@ -198,7 +198,7 @@ nav{
     color: #000000;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    line-height: 1rem;
+    line-height: 1.2rem;
     font-size:.8rem;
 }
 
@@ -240,7 +240,7 @@ img:hover{
  }
 
 .article-margin{
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
 }
   
 .article-title{
@@ -250,7 +250,7 @@ img:hover{
     text-align:center;
     letter-spacing: .07rem;
     padding-bottom: .4rem;
-
+    line-height:1.2rem;
 }
 .article-title>span{
     border-bottom: solid 1px #b16969;
@@ -291,9 +291,11 @@ img:hover{
 }
 
 .pic-height{
-    height:37%;
+    height:max-content;
     width:100%
-}
+} 
+
+
 /* FOOTER*/
 
 footer{
