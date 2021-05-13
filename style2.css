@@ -129,9 +129,10 @@ header{
     padding-bottom: 2px;
 }
 
-.logo>a{
-    color:white;
-
+.logo-text{
+    font-weight:600;
+    font-size: .7rem;
+    text-align: center;
 }
 
 .logo{
@@ -143,6 +144,9 @@ header{
     /* perfectly centered in the header*/
     margin-top:auto;
     margin-bottom: auto;
+    color:white;
+    flex-direction: column;
+
 }
 
 .donate>span{
