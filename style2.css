@@ -127,7 +127,6 @@ header{
 }
 .white-links:hover span {
     border-bottom: solid 2px white;
-    padding-bottom: 2px;
 }
 
 .logo-text{
