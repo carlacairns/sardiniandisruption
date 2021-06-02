@@ -45,7 +45,6 @@ a{
 .links:hover span{
     /* spanning the words in the link make the underline not effect the logo and size of margin*/
     border-bottom: solid 2px #b16969;
-    padding-bottom: 2px;
 }
 h1{
     color:rgb(48, 48, 48);
