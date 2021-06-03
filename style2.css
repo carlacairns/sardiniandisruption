@@ -294,7 +294,6 @@ img:hover{
 }
 
 .cave-pic{
-    height:max-content;
     width:100%;
     filter: sepia(50%);
 } 
