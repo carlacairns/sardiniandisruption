@@ -94,6 +94,10 @@ h1{
 .col1{
     grid-template-columns: 1fr;
 }
+.width-height100{
+    width:100%;
+    height:100%;
+}
 /* HEADER */
 
 header{
@@ -597,6 +601,7 @@ input, textarea{
     }
     .logo-text{
         font-size: .6rem;
+        text-align: left;
     }
    /* coming soon page */
    .coming-soon-bottom{
