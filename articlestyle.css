@@ -185,6 +185,22 @@ img:hover{
 }
 
 @media(max-width:500px){ 
+/* pic formatting */
+.Ddj-bull-img{
+    width:100%;
+}
+.sincantu-node{
+    width:100.0%;
+}
+.schematic-mandra-antine{
+    width:100%;
+}
+.plasma-pattern2{
+    width:100%;
+}
+.plasma-pattern3{
+    width:100%;
+}    
 .article-col1-col1 {
     grid-template-columns: 1fr;
 }
@@ -231,22 +247,7 @@ img{
     padding-top: 2rem;
 }
 
-/* pic formatting */
-.Ddj-bull-img{
-    width:100%;
-}
-.sincantu-node{
-    width:100.0%;
-}
-.schematic-mandra-antine{
-    width:100%;
-}
-.plasma-pattern2{
-    width:100%;
-}
-.plasma-pattern3{
-    width:100%;
-}
+
 }
 @media( min-width: 500px) and (max-width:900px){
     .article-heading > .page-title{
