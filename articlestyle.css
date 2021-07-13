@@ -230,7 +230,7 @@ figcaption{
 img{
     padding-top: 2rem;
 }
-}
+
 /* pic formatting */
 .Ddj-bull-img{
     width:100%;
@@ -246,6 +246,7 @@ img{
 }
 .plasma-pattern3{
     width:100%;
+}
 }
 @media( min-width: 500px) and (max-width:900px){
     .article-heading > .page-title{
